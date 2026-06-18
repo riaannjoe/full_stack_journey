@@ -36,3 +36,40 @@ function fun2(){
 
 fun1();
 fun2();
+
+var outerWear = "T-Shirt";
+
+function myOutfit(){
+    var outerWear = "sweater";
+    return outerWear;
+}
+console.log(myOutfit());
+console.log(outerWear);
+
+
+function minusSeven(num){
+    return num - 7;
+}
+console.log(minusSeven(10));
+
+
+function timesFive(num){
+    return num * 5;
+}
+console.log(timesFive(5));
+
+
+var sum = 0;
+function addThree(){
+    sum += 3;
+}
+function addFive(){
+    sum += 5;
+}
+
+console.log(sum);
+addThree();
+console.log(sum);
+addFive();
+console.log(sum);
+
