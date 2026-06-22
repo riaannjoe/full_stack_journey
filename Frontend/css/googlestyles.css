@@ -1,5 +1,6 @@
 .main{
     margin-top: 100px;
+    text-align: center;
 }
 
 
@@ -9,8 +10,6 @@
     margin-left: auto;
     margin-right:auto;
     margin-bottom:20px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -18,7 +17,6 @@
 .search-input{
     display: block;
     width: 400px;
-<<<<<<< HEAD
     line-height: 24px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -30,21 +28,23 @@
     margin-right: auto;
 }
 
+.flexbox{
+     display: flex;
+    justify-content: space - around;
+}
+
 .btn{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
+    margin-left: 4px;
+    margin-right: 4px;
     margin-top: 30px;
+    border: none;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 4px;
     font-size: 14px;
-=======
-    margin-left: auto;
-    margin-right:auto;
+    text-align:center;
 
->>>>>>> 9619abe68959cfe39b330a62ed9559ed4b4519ee
+
 }
