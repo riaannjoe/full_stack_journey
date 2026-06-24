@@ -18,4 +18,4 @@ function caseInSwitch(val){
     return answer;
 }
 
-console.log(caseInSwitch(1)) ;
+console.log(caseInSwitch(1)) ; 
