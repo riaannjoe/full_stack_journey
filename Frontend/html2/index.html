@@ -28,51 +28,64 @@
 
 
     <body>
+        <header>
+            <h1>My Planner!</h1>
 
-        <h1>My Planner!</h1>
+            <hr>
 
-        <hr>
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="#place">Places</a>
+            <nav aria-labelledby="Primary-navigation">
+                <h2 id="Primary-navigation">Primary Navigation</h2>
+                <ul>
+                    <li>
+                        <a href="#place">Places</a>
                     
-                </li>
+                    </li>
 
-                <li>
-                    <a href="#vacation">Vacation</a>
-                </li>
-            </ul>
+                    <li>
+                        <a href="#vacation">Vacation</a>
+                    </li>
+                </ul>
             
-        </nav>
+            </nav>
+
+        </header>
+
+        <main>    
 
         <hr>
-        <section id="vacation">
+        <article id="vacation">
             <h2>I am planning a vaction</h2>
             <p>I have been <strong>working very hard</strong></p>
-            <p>I use resources from <abbr title="Mozilla Developer Network">MDN</abbr></p>
-            <p>I'd like to <em>visit Paris</em></p>
+            <section>
+                <h3>
+                    <p>I use resources from <abbr title="Mozilla Developer Network">MDN</abbr></p>
+                    <p>I'd like to <em>visit Paris</em></p>
 
+                </h3>
+            </section>
 
-        </section>
-    
-        <hr>
-        <section id="place">
-            <h3>Places in Paris</h3>
-            <img src="images/eiffel.png" alt="Eiffel pic" title="this is a pic of eiffel" width="300" height="500"/>
-            <p>Lemme tell u bout it:
-            <br>&nbsp;&nbsp;.. Eiffel
-            <br>&nbsp;&nbsp;.. Louvre
-            <br>&nbsp;&nbsp;.. Arc de Triumph
-             </p>
-        </section>
+            <section id="place">
+                <h3>Places in Paris</h3>
+                    <img src="images/eiffel.png" alt="Eiffel pic" title="this is a pic of eiffel" width="300" height="500"/>
+                    <p>Lemme tell u bout it:
+                        <br>&nbsp;&nbsp;.. Eiffel
+                        <br>&nbsp;&nbsp;.. Louvre
+                        <br>&nbsp;&nbsp;.. Arc de Triumph
+                    </p>
+            </section>
         
 
         <address>
             The French Bakery,
             <br>Near Eiffel Tower.
         </address>
+
+
+
+        </article>
+    
+        <hr>
+        
 
 
         <!--This is a HTML comment-->
@@ -110,18 +123,131 @@
             <dd>I hear this is <strong>cold.</strong></dd>
         </dl>
 
+        <aside>
+            <details>
+                <summary>
+                    Guess the <mark>number of hours  </mark>i code for a day
+                </summary>
+
+                <p>I start at <time datetime="08:00"></time>8am and i write code for <time datetime="PT3H"></time> 3 hours every morning
+
+                </p>
+            </details>
+        </aside>
+
+        <br>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+            </tr>
+            <tr>
+                <td>
+                    <time datetime="06:00">6am</time>-
+                    <time datetime="07:00">7am</time>
+                </td>
+                <td>Meditate</td>
+            </tr>
+            <tr>
+                <td>
+                    <time datetime="06:00">8am</time>-
+                    <time datetime="11:00">11am</time>
+                </td>
+                <td>Write code</td>
+            </tr> 
+            <tr>
+                <td rowspan="2">All other times</td>
+                <td colspan="2">Free time</td>
+            </tr>           
+        </table>
+
+
+
         <p>
             <code> &lt; h1 &gt; HTML Code &lt; h1 &gt; </code>
         </p>
 
         <a href="https://en.wikipedia.org/wiki/Tulip">Tulips</a>
 
+        </main>
+
         <hr>
+
+
+        <br>
+        <table>
+            <caption>My Daily Schedule</caption>
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th scope="column">Time</th>
+                    <th scope="column">Activity</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">Morning</th>
+                    <td>
+                        <time datetime="08:00">8 am</time>-
+                        <time datetime="11:00">11 am</time>
+                    </td>
+                    <td>Write code</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Afternoon</th>
+                    <td>
+                        <time datetime="12:00">12 pm</time>-
+                        <time datetime="02:00">2 pm</time>
+
+                    </td>
+                    <td>Eat lunch</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Evening</th>
+                    <td>
+                        <time datetime="05:00">5 am</time>-
+                        <time datetime="07:00">7 am</time>
+
+                    </td>
+                    <td>Study for other courses</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Night</th>
+                    <td rowspan="2">All other times</td>
+                    <td>Free time</td>
+                </tr>
+
+                <tr>
+                    <th>mwhehe</th>
+                    <td>Sleep</td>
+                </tr>
+
+
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3">That's what i do in a week</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+
+
+        <footer>
         &lt;&lt;&lt; &copy; <a href="about.html">Ria</a> &gt; &gt;&gt;
 
         <p>
             <a href="#">Back to top</a>
         </p>
+
+        </footer>
 
 
     </body>
